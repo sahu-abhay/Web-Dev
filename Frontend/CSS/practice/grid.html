@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(12,1fr);
+            grid-gap: 5px 5px;
+        }
+        .header{
+            grid-column: 1/span 3;
+            grid-row: 1/span 1;
+            background-color: pink;
+
+        }
+        .sidebar{
+            grid-column:1/span 1 ;
+            grid-row:2 /span 10;
+            background-color: pink;
+
+        }
+        .navigation{
+            grid-column: 2/span 1 ;
+            grid-row: 2/span 1;
+            background-color: pink;
+
+        }
+        .main{
+            grid-column: 2/span 1;
+            grid-row: 3/span 9;
+            background-color: pink;
+
+        }
+        .ads{
+            grid-column:3/span 1;
+            grid-row: 2/ span 10;
+            background-color: pink;
+
+        }
+        .footer{
+            grid-column: 1/span 3;
+            grid-row: 12/span 1;
+            background-color: pink;
+
+        }
+        @media (max-width:720px){
+            .header{
+            grid-column: 1/span 3;
+            grid-row: 1/span 1;
+            background-color: pink;
+
+        }
+        .sidebar{
+            grid-column:1/span 1 ;
+            grid-row:3 /span 9;
+            background-color: pink;
+
+        }
+        .navigation{
+            grid-column: 1/span 3 ;
+            grid-row: 2/span 1;
+            background-color: pink;
+
+        }
+        .main{
+            grid-column: 2/span 2;
+            grid-row: 3/span 9;
+            background-color: pink;
+
+        }
+        .ads{
+            grid-column:1/span 1;
+            grid-row: 12/ span 1;
+            background-color: pink;
+
+        }
+        .footer{
+            grid-column: 2/span 2;
+            grid-row: 12/span 1;
+            background-color: pink;
+
+        } 
+    }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="header">header(1row,12column)</div>
+        <div class="sidebar">sidebar</div>
+        <div class="navigation">navigation</div>
+        <div class="main">main</div>
+        <div class="ads">ads2</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

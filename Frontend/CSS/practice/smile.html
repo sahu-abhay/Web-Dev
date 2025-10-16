@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #smile{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        .eyes{
+            display: inline-block;
+            border-radius: 50%;
+            background-color: orange;
+            height: 10px;
+            width: 10px;
+        }
+        #mouth{
+            border: 2px solid;
+            height: 45px;
+            width: 100px;
+            background-color: orange;
+            border-radius: 0 0 80px 80px;
+            position: relative;
+            left: 50px;
+            top: 120px;
+        }
+
+       .left-eye,.right-eye{
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        display: inline-block;
+        position: absolute;
+        left:55px;
+        top: 60px;
+        border-radius: 50%;
+       }
+       .right-eye{
+        left: 135px;
+       }
+    </style>
+</head>
+<body>
+    <div id="smile">
+        <div id="first">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+        </div>
+     <div id="mouth"></div>
+    </div>
+</body>
+</html>

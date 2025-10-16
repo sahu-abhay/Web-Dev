@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex-container{
+            width: 80%;
+            margin: 10px auto;
+            height: 300px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            align-content: space-around;
+
+        }
+        #flex-container div{
+            color: white;
+            width: 205px;
+            height: 45px;
+        }
+        #red{
+            flex-shrink: 0.5;
+            flex-grow: 1;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <div style="background-color: violet;">violet</div>
+        <div style="background-color: indigo;">indigo</div>
+        <div style="background-color: blue;">blue</div>
+        <div style="background-color: green ;">green</div>
+        <div style="background-color: yellow;">yellow</div>
+        <div style="background-color: orange;">orange</div>
+        <div id="red" style="background-color: red;">rtted</div>
+    </div>
+</body>
+</html>

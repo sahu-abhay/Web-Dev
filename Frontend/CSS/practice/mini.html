@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar {
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .main_box {
+            background: url("photo.jpg");
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .btn1 {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            left: 12px;
+            top: 9px;
+        }
+
+        .btn1 i {
+            transition: all 0.2s linear;
+        }
+
+        .sidebar {
+            position: absolute;
+            left: -300px;
+            height: 100vh;
+            width: 250px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s linear;
+        }
+
+        .sidebar .logo {
+            position: absolute;
+            line-height: 50px;
+            width: 100%;
+            font-size: 20px;
+            height: 60px;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+        }
+
+        .logo a {
+            font-family: "Playwrite MX", cursive;
+            position: absolute;
+            left: 45px;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn2 {
+            position: absolute;
+            left: 225px;
+            top: 5px;
+            font-size: 25px;
+        }
+
+        .btn2 i {
+            color: grey;
+            transition: all 0.2s linear;
+            /* opacity: 0; */
+        }
+
+        .menu {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            position: absolute;
+            width: 100%;
+            top: 80px;
+        }
+
+        .sidebar .menu li {
+
+            margin-top: 6px;
+            padding: 14px 14px;
+        }
+
+        .sidebar .menu a,
+        i {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu i {
+            padding-right: 5px;
+        }
+
+        .social i {
+            padding-right: 8px;
+            opacity: 0.5;
+
+        }
+
+        .social {
+            position: absolute;
+            bottom: 25px;
+            left: 30%;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu li:hover {
+            box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+            /* background-color: #555; */
+             /* Medium gray shade */
+        }
+
+        .btn1 i:hover {
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .btn2 i:hover {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .social i:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        #click:checked~.sidebar {
+            left: 0;
+        }
+
+        #click:checked~.btn1 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_box">
+        <input type="checkbox" id="click">
+        <div class="btn1"><label for="click"><i class="fa-solid fa-bars"></i></label></div>
+        <div class="sidebar">
+            <div class="logo"><a href="#">Abhay Sahu</a></div>
+            <div class="btn2"><label for="click"><i class="fa-solid fa-xmark"></i></label></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-image"></i>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a href="#">Shortcuts</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-photo-film"></i>
+                        <a href="#">Exhibits</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-store"></i>
+                        <a href="#">Store</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-comments"></i>
+                        <a href="#">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

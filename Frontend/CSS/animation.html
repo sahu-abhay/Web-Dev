@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 300px;
+            background-color:white;
+            animation-name: identifiers;
+            animation-name: identifier;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes identifiers {
+            from{
+                font-size: 20px;
+            }
+            to{
+                font-size: 40px;
+            }
+        }
+        @keyframes identifier {
+            0%{
+                background-color: blue;
+               
+            }
+            10%{
+                background-color: red;
+            }
+            90%{
+                background-color: pink;
+            }
+            100%{
+                background-color: yellow;
+                box-shadow:30px 30px 30px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>this is animation</p>
+    </div>
+</body>
+</html>

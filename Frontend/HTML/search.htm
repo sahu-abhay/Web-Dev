@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            border-radius: 10px;
+            border: none;
+
+        }
+
+        .search{
+            background-color: var(--color-realbox-background);
+            border: none;
+            border-radius: var(--cr-realbox-border-radius);
+            color: var(--color-realbox-foreground);
+            font-family: inherit;
+            font-size: inherit;
+            height: 100%;
+            outline: 0;
+            padding-inline-end: calc(var(--cr-realbox-voice-icon-offset) + var(--cr-realbox-icon-width) + var(--cr-realbox-inner-icon-margin));
+            padding-inline-start: 52px;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.google.com/search?q=goggle&sca_esv=0b15258b1181e5d8&sxsrf=ACQVn09G_xNUf8uZczm0QJJqa7Go-8z8lA%3A1714407563116&source=hp&ei=i8gvZoC_BODc1e8P_suqiA0&iflsig=ANes7DEAAAAAZi_WmyPRPPVLUtb6AHEyAbf7Z-PQkHcZ&ved=0ahUKEwjAsLDu6eeFAxVgbvUHHf6lCtEQ4dUDCBU&uact=5&oq=goggle&gs_lp=Egdnd3Mtd2l6IgZnb2dnbGUyBxAjGLECGCcyBxAjGLECGCcyBxAjGLECGCcyERAAGIAEGJECGLEDGIMBGIoFMhcQLhiABBiRAhixAxjRAxiDARjHARiKBTIQEAAYgAQYsQMYQxiDARiKBTIQEAAYgAQYsQMYQxiDARiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYgwEYCkgAUABYAHAAeACQAQCYAaIMoAGtGKoBAzgtMrgBA8gBAJgCAqACuBjCAgoQABiABBixAxgKmAMAkgcDNy0yoAeFFg&sclient=gws-wiz">
+        <center>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+                <input type="text" name="q" placeholder="Search Google or type a URL" class="search" 
+                    style="border: none;">
+                <button class="btn">Search</button>
+            </div>
+        </center>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="/server">
+    
+     <label >
+        UserName:
+        <input placeholder="Enter user name">
+    </label>
+    <br>
+    <input type="submit" value="click me">
+  </form>
+  <hr>
+   
+   <form action="/server">
+    <input type="checkbox" name="age" id="age" value="age">
+    <label for="age">Adult</label>
+    <input type="checkbox" name="age" id="age"   value="age">
+    <label for="age">Adult</label>
+
+     <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="male" >
+    <label for="male">Male</label> 
+    <div>
+      select your profession
+    <select name="profession" id="profession">
+      <option value=""></option>
+      <option value="std">Student</option>
+      <option value="dev">developer</option>
+    </select>
+  </div>
+  <label for="ran">select your confident percantag</label>
+  <input type="range" id="ran" name="range" min="0" max="100" step="20">
+    <br>
+  <div>
+    <label for="t">Give your Feedback</label><br>
+    <textarea id="t" placeholder="type here" name="feedback" ></textarea>
+    <button>submit</button>
+    </div>
+
+  </form>
+      
+
+  <form action="/sites">
+    <h1>Registration Form</h1>
+    <input type="text" name="name" id="" placeholder="First Name">
+    <input type="text" name="surname" placeholder="Last name">
+    <br>
+    Please select gender
+    <select name="gender" id="">
+      <option value="Male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <br>
+    Do you agree to all terms of service?
+    <input type="checkbox">Yes, I agree
+    <br>
+    <button>Register</button>
+  </form>
+  
+</body>
+</html>
